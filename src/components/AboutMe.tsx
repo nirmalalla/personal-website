@@ -1,5 +1,5 @@
 import { Text, Group, Title, Container, Image, Pill } from '@mantine/core';
-
+import vandy from "../assets/Vanderbilt-University-Emblem.png"
 
 function AboutMe() {
   
@@ -8,7 +8,7 @@ function AboutMe() {
       <Container>
         <Text style={{marginBottom: 20}}>I am from Rock Island, IL and have hobbies that include: weightlifting, movies, basketball, hockey, and, obviously, programming. I am an aspiring Software and AI/ML Engineer with a passion for technology and learning. I love to try out new things and step out of my comfort zone. Feel free to reach out for any inquiries, or simply to get to know me.</Text>
         <Group>
-          <Image h={200} w="auto" src="personal-website\src\assets\Vanderbilt-University-Emblem.png"></Image>
+          <Image h={200} w="auto" src={vandy}></Image>
           <div>
             <Title order={2}>Education</Title>
             <Text>Computer Science and Mathematics @ Vanderbilt University</Text>
