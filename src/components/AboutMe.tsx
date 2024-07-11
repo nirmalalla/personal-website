@@ -1,14 +1,17 @@
 import { Text, Group, Title, Container, Image, Pill } from '@mantine/core';
 import vandy from "../assets/Vanderbilt-University-Emblem.png"
+import "../styles/AboutMe.css"
 
 function AboutMe() {
   
   return (
     <div>
-      <Container>
+      <Container className='summary'>
         <Text style={{marginBottom: 20}}>I am from Rock Island, IL and have hobbies that include: weightlifting, movies, basketball, hockey, and, obviously, programming. I am an aspiring Software and AI/ML Engineer with a passion for technology and learning. I love to try out new things and step out of my comfort zone. Feel free to reach out for any inquiries, or simply to get to know me.</Text>
-        <Group>
-          <Image h={200} w="auto" src={vandy}></Image>
+      </Container>
+      <Container>
+        <Group style={{display: "flex", justifyContent:"center"}}>
+          <Image h={137} w="auto" src={vandy}></Image>
           <div>
             <Title order={2}>Education</Title>
             <Text>Computer Science and Mathematics @ Vanderbilt University</Text>
@@ -17,9 +20,9 @@ function AboutMe() {
           </div>
         </Group>
       </Container>
-      <Container mt={20}>
+      <Container mt={20} className='interests'>
         <Group style={{ textAlign: 'center', justifyContent: "center" }}>
-          <Title order={2} style={{ marginBottom: 10 }}>
+          <Title order={2} style={{ marginBottom: 5 }}>
             Interests
           </Title>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -33,7 +36,7 @@ function AboutMe() {
           </div>
         </Group>
       </Container>
-      <Container mt={20}>
+      <Container mt={20} className='interests'>
         <Group style={{ textAlign: 'center', justifyContent: "center" }}>
           <Title order={2} style={{ marginBottom: 10 }}>
             Skills
